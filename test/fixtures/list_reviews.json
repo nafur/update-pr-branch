@@ -68,6 +68,10 @@
     },
     {
       "id": 667348866,
+      "user": {
+        "login": "mpreiner",
+        "id": "4653598",
+      },
       "body": "",
       "state": "COMMENTED",
       "html_url": "https://github.com/cvc5/cvc5/pull/6617#pullrequestreview-667348866",
@@ -78,6 +82,10 @@
     },
     {
       "id": 667453226,
+      "user": {
+        "login": "nafur",
+        "id": "1126854",
+      },
       "body": "A few minor comments.",
       "state": "CHANGES_REQUESTED",
       "html_url": "https://github.com/cvc5/cvc5/pull/6617#pullrequestreview-667453226",
@@ -88,6 +96,10 @@
     },
     {
       "id": 668030183,
+      "user": {
+        "login": "aniemetz",
+        "id": "29313325",
+      },
       "body": "",
       "state": "COMMENTED",
       "html_url": "https://github.com/cvc5/cvc5/pull/6617#pullrequestreview-668030183",
@@ -98,6 +110,10 @@
     },
     {
       "id": 668510084,
+      "user": {
+        "login": "mpreiner",
+        "id": "4653598",
+      },
       "body": "",
       "state": "APPROVED",
       "html_url": "https://github.com/cvc5/cvc5/pull/6617#pullrequestreview-668510084",
@@ -108,6 +124,10 @@
     },
     {
       "id": 668626219,
+      "user": {
+        "login": "nafur",
+        "id": "1126854",
+      },
       "body": "LGTM.",
       "state": "APPROVED",
       "html_url": "https://github.com/cvc5/cvc5/pull/6617#pullrequestreview-668626219",
