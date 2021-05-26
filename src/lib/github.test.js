@@ -304,6 +304,33 @@ describe('getApprovalStatus()', () => {
       requiredApprovalCount: requiredApprovalCount,
     });
   });
+  
+  test('only count the latest concluding review of each reviewer 3', async () => {
+    // 1 reviewer approved twice, one reviewer appoved but requested for change later
+    const reviews = {
+      ...reviewsList,
+      data: [
+        { ...reviewsList.data[8] },
+        { ...reviewsList.data[7] },
+        { ...reviewsList.data[6] },
+        { ...reviewsList.data[5] },
+        { ...reviewsList.data[4] },
+      ],
+    };
+    const mockedMethod = jest.fn().mockResolvedValue(reviews);
+
+    github.getOctokit.mockReturnValue({
+      pulls: { listReviews: mockedMethod },
+    });
+
+    const result = await gitLib.getApprovalStatus(pullNumber);
+    expect(mockedMethod).toHaveBeenCalled();
+    expect(result).toEqual({
+      approvalCount: 2,
+      changesRequestedCount: 0,
+      requiredApprovalCount: requiredApprovalCount,
+    });
+  });
 });
 
 describe('getAutoUpdateCandidate()', () => {
