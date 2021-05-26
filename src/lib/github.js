@@ -119,12 +119,12 @@ export const getApprovalStatus = async (pullNumber) => {
 
   reviewsData.reverse().forEach(({ state, user }) => {
     const reviewer = user.login;
-    log(`considering reviewer ${reviewer}`);
+    console.log(`considering reviewer ${reviewer}`);
 
     // only count the latest concluding review per perviewer
     if (reviewers.has(reviewer)) return;
     if (!['CHANGES_REQUESTED', 'APPROVED'].includes(state)) return;
-    log(`counting ${state}`);
+    console.log(`counting ${state}`);
 
     if (state === 'CHANGES_REQUESTED') changesRequestedCount += 1;
     if (state === 'APPROVED') approvalCount += 1;
