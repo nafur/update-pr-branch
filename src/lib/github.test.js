@@ -348,7 +348,16 @@ describe('getAutoUpdateCandidate()', () => {
 
   test('PR with request-for-change review will not be selected', async () => {
     const prList = [{ ...pullsList.data[0], auto_merge: {} }];
-    const mockedListReviews = jest.fn().mockResolvedValue(reviewsList);
+    const reviews = {
+      ...reviewsList,
+      data: [
+        { ...reviewsList.data[0] },
+        { ...reviewsList.data[1] },
+        { ...reviewsList.data[2] },
+        { ...reviewsList.data[3] },
+      ],
+    };
+    const mockedListReviews = jest.fn().mockResolvedValue(reviews);
     const mockedGet = jest.fn();
 
     github.getOctokit.mockReturnValue({
