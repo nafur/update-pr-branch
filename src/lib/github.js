@@ -112,6 +112,8 @@ export const getApprovalStatus = async (pullNumber) => {
     ...repo,
     pull_number: pullNumber,
   });
+  
+  console.log(`Check this PR ${pull_number}`);
 
   let reviewers = new Set();
   let changesRequestedCount = 0;
@@ -122,7 +124,10 @@ export const getApprovalStatus = async (pullNumber) => {
     console.log(`considering reviewer ${reviewer}`);
 
     // only count the latest concluding review per perviewer
-    if (reviewers.has(reviewer)) return;
+    if (reviewers.has(reviewer)) {
+      console.log(`Already seen...`);
+      return;
+    }
     if (!['CHANGES_REQUESTED', 'APPROVED'].includes(state)) return;
     console.log(`counting ${state}`);
 
