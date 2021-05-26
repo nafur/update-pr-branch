@@ -70,7 +70,7 @@
       "id": 667348866,
       "user": {
         "login": "mpreiner",
-        "id": "4653598",
+        "id": "4653598"
       },
       "body": "",
       "state": "COMMENTED",
@@ -84,7 +84,7 @@
       "id": 667453226,
       "user": {
         "login": "nafur",
-        "id": "1126854",
+        "id": "1126854"
       },
       "body": "A few minor comments.",
       "state": "CHANGES_REQUESTED",
@@ -98,7 +98,7 @@
       "id": 668030183,
       "user": {
         "login": "aniemetz",
-        "id": "29313325",
+        "id": "29313325"
       },
       "body": "",
       "state": "COMMENTED",
@@ -112,7 +112,7 @@
       "id": 668510084,
       "user": {
         "login": "mpreiner",
-        "id": "4653598",
+        "id": "4653598"
       },
       "body": "",
       "state": "APPROVED",
@@ -126,7 +126,7 @@
       "id": 668626219,
       "user": {
         "login": "nafur",
-        "id": "1126854",
+        "id": "1126854"
       },
       "body": "LGTM.",
       "state": "APPROVED",
