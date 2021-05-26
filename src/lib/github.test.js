@@ -290,8 +290,8 @@ describe('getApprovalStatus()', () => {
     const result = await gitLib.getApprovalStatus(pullNumber);
     expect(mockedMethod).toHaveBeenCalled();
     expect(result).toEqual({
-      approvalCount: 1,
-      changesRequestedCount: 1,
+      approvalCount: 2,
+      changesRequestedCount: 0,
       requiredApprovalCount: requiredApprovalCount,
     });
   });
