@@ -68,7 +68,7 @@
     },
     {
       "id": 667348866,
-      "body": """,
+      "body": "",
       "state": "COMMENTED",
       "html_url": "https://github.com/cvc5/cvc5/pull/6617#pullrequestreview-667348866",
       "pull_request_url": "https://api.github.com/repos/cvc5/cvc5/pulls/6617",
@@ -78,7 +78,7 @@
     },
     {
       "id": 667453226,
-      "body": "A few minor comments."",
+      "body": "A few minor comments.",
       "state": "CHANGES_REQUESTED",
       "html_url": "https://github.com/cvc5/cvc5/pull/6617#pullrequestreview-667453226",
       "pull_request_url": "https://api.github.com/repos/cvc5/cvc5/pulls/6617",
@@ -88,7 +88,7 @@
     },
     {
       "id": 668030183,
-      "body": """,
+      "body": "",
       "state": "COMMENTED",
       "html_url": "https://github.com/cvc5/cvc5/pull/6617#pullrequestreview-668030183",
       "pull_request_url": "https://api.github.com/repos/cvc5/cvc5/pulls/6617",
@@ -98,7 +98,7 @@
     },
     {
       "id": 668510084,
-      "body": """,
+      "body": "",
       "state": "APPROVED",
       "html_url": "https://github.com/cvc5/cvc5/pull/6617#pullrequestreview-668510084",
       "pull_request_url": "https://api.github.com/repos/cvc5/cvc5/pulls/6617",
@@ -108,7 +108,7 @@
     },
     {
       "id": 668626219,
-      "body": "LGTM."",
+      "body": "LGTM.",
       "state": "APPROVED",
       "html_url": "https://github.com/cvc5/cvc5/pull/6617#pullrequestreview-668626219",
       "pull_request_url": "https://api.github.com/repos/cvc5/cvc5/pulls/6617",
