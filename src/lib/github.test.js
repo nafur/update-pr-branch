@@ -269,7 +269,7 @@ describe('getApprovalStatus()', () => {
     });
   });
   
-  est('only count the latest concluding review of each reviewer 2', async () => {
+  test('only count the latest concluding review of each reviewer 2', async () => {
     // 1 reviewer approved twice, one reviewer appoved but requested for change later
     const reviews = {
       ...reviewsList,
