@@ -113,7 +113,7 @@ export const getApprovalStatus = async (pullNumber) => {
     pull_number: pullNumber,
   });
   
-  console.log(`Check this PR ${pull_number}`);
+  console.log(`Check this PR ${pullNumber}`);
 
   let reviewers = new Set();
   let changesRequestedCount = 0;
