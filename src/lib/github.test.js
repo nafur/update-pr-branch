@@ -227,7 +227,16 @@ describe('getApprovalStatus()', () => {
   });
 
   test('should return count of concluding approved, changes-requested reviews', async () => {
-    const mockedMethod = jest.fn().mockResolvedValue(reviewsList);
+    const reviews = {
+      ...reviewsList,
+      data: [
+        { ...reviewsList.data[0] },
+        { ...reviewsList.data[1] },
+        { ...reviewsList.data[2] },
+        { ...reviewsList.data[3] },
+      ],
+    };
+    const mockedMethod = jest.fn().mockResolvedValue(reviews);
 
     github.getOctokit.mockReturnValue({
       pulls: { listReviews: mockedMethod },
